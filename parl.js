@@ -1,7 +1,6 @@
 setTimeout(()=>{
     console.log(seja1);
     prestejBesede();
-    prestejBesedeZaOsebo("kekec");
 },5000)
 
 function prestejBesede(){
@@ -15,20 +14,6 @@ function prestejBesede(){
     })
     console.log(pers);
     draw(pers);
-}
-
-function prestejBesedeZaOsebo(idOsebe){
-    let words = {};
-    console.log(idOsebe);
-    seja1.forEach(beseda=>{
-        if(!words[beseda['\"lemma\"']]){
-            words[beseda['\"lemma\"']] = 0;
-        }
-        words[beseda['\"lemma\"']]++;
-    })
-    console.log(words);
-    //draw1();
-    return;
 }
 
 
@@ -99,8 +84,4 @@ function draw(data){
     return 
     
 
-}
-
-function draw1(){
-    var svg = d3.select("svg").remove();
 }
